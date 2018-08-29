@@ -3,7 +3,8 @@
 namespace app\admin\controller;
 
 class Index{
-	public function index{
+	public function index
+	{
 		dump(config());
 	} 
 }
