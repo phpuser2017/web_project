@@ -5,13 +5,19 @@
     <title>Document</title>
 </head>
 <body>
-我叫<p>{$name}</p>
-{$isassign}
-<p>STATIC</p>
-__ROOT__<br>
-__URL__
-__STATIC__
-__JS__
-__CSS__
+{$isassign|substr=0,9}<br>
+{$time|date='Y-m-d',###}<br>
+{$name|default='18790'}<br>
+{/*{$email|md5}<br>*/}
+{/*{$email|md5|substr=0,9}<br>*/}
 </body>
+{literal}
+
+{$email}
+{/literal}
+{literal}
+<script type="text/javascript">
+	{$name}
+</script>
+{/literal}
 </html>
